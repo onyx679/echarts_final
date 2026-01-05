@@ -371,4 +371,4 @@ window.initAllCharts = function () {
         })();
     }
 
-}) ();
+};
