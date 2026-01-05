@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Insights - 202202474088 Zhang Wenhao</title>
+    <link rel="stylesheet" href="css/material_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <div class="app-bar">
+        <h1>新能源汽车销量可视化 (2023-2025)</h1>
+        <nav class="nav-links">
+            <a href="index.html">市场概览</a>
+            <a href="brand.html">品牌分析</a>
+            <a href="consumer.html" class="active">消费者洞察</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="grid-3">
+            <div class="card">
+                <h2>区域销量分布</h2>
+                <div id="chart-funnel" class="chart-container"></div>
+                <p class="chart-description">重点省份销量漏斗分析</p>
+            </div>
+            <div class="card">
+                <h2>价格与续航相关性</h2>
+                <div id="chart-scatter" class="chart-container"></div>
+                <p class="chart-description">分析热门车型的性价比分布</p>
+            </div>
+            <div class="card">
+                <h2>新能源产业生态</h2>
+                <div id="chart-graph" class="chart-container"></div>
+                <p class="chart-description">产业链与品牌关系网络</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data_store.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+
+</html>

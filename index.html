@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEV Overview - 202202474088 Zhang Wenhao</title>
+    <link rel="stylesheet" href="css/material_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <div class="app-bar">
+        <h1>新能源汽车销量可视化 (2023-2025)</h1>
+        <nav class="nav-links">
+            <a href="index.html" class="active">市场概览</a>
+            <a href="brand.html">品牌分析</a>
+            <a href="consumer.html">消费者洞察</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Stats Section -->
+        <div class="stats-row">
+            <div class="stat-card">
+                <span id="stat-total" class="stat-number">4013w</span>
+                <span class="stat-label">近三年总销量</span>
+            </div>
+            <div class="stat-card">
+                <span id="stat-growth" class="stat-number">+414%</span>
+                <span class="stat-label">市场渗透率</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">+6.1%</span>
+                <span class="stat-label">年均增长率</span>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="grid-2">
+            <div class="card">
+                <h2>月度市场趋势分析 (2023-2025)</h2>
+                <div id="chart-trend" class="chart-container"></div>
+                <p class="chart-description">
+                    混合展示月销量与环比增长率趋势
+                </p>
+            </div>
+            <div class="card">
+                <h2>2025 渗透率目标</h2>
+                <div id="chart-gauge" class="chart-container"></div>
+                <p class="chart-description">
+                    距离 50% 渗透率目标的达成进度
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data_store.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+
+</html>

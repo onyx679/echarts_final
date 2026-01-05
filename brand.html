@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Analysis - 202202474088 Zhang Wenhao</title>
+    <link rel="stylesheet" href="css/material_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <div class="app-bar">
+        <h1>新能源汽车销量可视化 (2023-2025)</h1>
+        <nav class="nav-links">
+            <a href="index.html">市场概览</a>
+            <a href="brand.html" class="active">品牌分析</a>
+            <a href="consumer.html">消费者洞察</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="grid-3">
+            <div class="card">
+                <h2>品牌市场份额</h2>
+                <div id="chart-pie" class="chart-container"></div>
+                <p class="chart-description">头部品牌市场占有率分布</p>
+            </div>
+            <div class="card">
+                <h2>热门车型性能对比</h2>
+                <div id="chart-radar" class="chart-container"></div>
+                <p class="chart-description">主要竞争车型的五维指标对比</p>
+            </div>
+            <div class="card">
+                <h2>品牌车型层级结构</h2>
+                <div id="chart-sunburst" class="chart-container"></div>
+                <p class="chart-description">品牌-车系-车型层级展示</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data_store.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+
+</html>
