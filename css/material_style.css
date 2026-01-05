@@ -6,9 +6,10 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-    height: 100vh;
-    overflow: hidden;
-    /* Prevent global scroll */
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Allow scrolling on small screens */
 }
 
 /* Material AppBar - Compact */
@@ -56,16 +57,17 @@ body {
     background-color: #e8f0fe;
 }
 
-/* Container - Single Screen height */
+/* Container - Flexible height for responsiveness */
 .container {
     max-width: 1400px;
     margin: 12px auto;
     padding: 0 16px;
-    height: calc(100vh - 80px);
-    /* Adjust based on header + margins */
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-bottom: 40px;
+    /* Room for footer */
 }
 
 /* Material Card - Compact */
@@ -91,9 +93,8 @@ body {
 
 .chart-container {
     flex: 1;
-    /* Take remaining space in card */
-    min-height: 0;
-    /* Allow shrinking */
+    min-height: 300px;
+    /* Ensure a minimum height for charts */
     width: 100%;
 }
 
@@ -152,6 +153,36 @@ p.chart-description {
 @media (max-width: 1024px) {
     .grid-3 {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .app-bar {
+        height: auto;
+        flex-direction: column;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .app-bar h1 {
+        margin-bottom: 12px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-row {
+        flex-direction: column;
+    }
+
+    .watermark {
+        font-size: 40px;
     }
 }
 
