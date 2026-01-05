@@ -154,3 +154,29 @@ p.chart-description {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Watermark Styling */
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.03);
+    pointer-events: none;
+    user-select: none;
+    z-index: 2000;
+    white-space: nowrap;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.footer-info {
+    position: fixed;
+    bottom: 10px;
+    right: 16px;
+    font-size: 11px;
+    color: rgba(95, 99, 104, 0.6);
+    z-index: 1001;
+    pointer-events: none;
+}
