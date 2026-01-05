@@ -2,7 +2,7 @@
 // Student: 202202474088 Zhang Wenhao
 // Optimized for Google Material Design and ECharts Textbook Standards
 
-(function () {
+window.initAllCharts = function () {
     // Shared ECharts Theme/Style
     var themeColor = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58', '#AB47BC', '#00ACC1'];
 
@@ -371,4 +371,4 @@
         })();
     }
 
-})();
+}) ();

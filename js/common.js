@@ -60,6 +60,10 @@ window.addEventListener('load', function () {
         if (container) {
             container.classList.add('loaded');
         }
+        // Trigger chart animations precisely when loading screen starts fading
+        if (typeof window.initAllCharts === 'function') {
+            window.initAllCharts();
+        }
         // Hide transition bar after content is ready
         setTimeout(function () {
             if (topBar) topBar.style.opacity = '0';
