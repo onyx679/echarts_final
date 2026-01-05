@@ -64,7 +64,7 @@ window.addEventListener('load', function () {
         setTimeout(function () {
             if (topBar) topBar.style.opacity = '0';
         }, 500);
-    }, 1000);
+    }, 2000);
 });
 
 document.addEventListener('DOMContentLoaded', function () {
