@@ -47,9 +47,12 @@ function initStats() {
 
 window.addEventListener('load', function () {
     var loader = document.getElementById('loader');
+    var topBar = document.getElementById('top-bar');
     var container = document.querySelector('.container');
 
-    // Small delay to ensure ECharts have started rendering
+    // Start progress bar animation
+    if (topBar) topBar.style.width = '100%';
+
     setTimeout(function () {
         if (loader) {
             loader.classList.add('loading-hidden');
@@ -57,7 +60,11 @@ window.addEventListener('load', function () {
         if (container) {
             container.classList.add('loaded');
         }
-    }, 800);
+        // Hide transition bar after content is ready
+        setTimeout(function () {
+            if (topBar) topBar.style.opacity = '0';
+        }, 500);
+    }, 1000);
 });
 
 document.addEventListener('DOMContentLoaded', function () {
