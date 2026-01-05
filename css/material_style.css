@@ -330,3 +330,19 @@ p.chart-description {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
+
+/* Google Style Branding Refinement */
+.brand-pulse {
+    font-weight: 700 !important; /* Bold as requested */
+    letter-spacing: 4px !important;
+    display: flex;
+    gap: 4px;
+}
+
+.brand-pulse span:nth-child(1) { color: #4285F4; } /* Blue */
+.brand-pulse span:nth-child(2) { color: #EA4335; } /* Red */
+.brand-pulse span:nth-child(3) { color: #FBBC05; } /* Yellow */
+.brand-pulse span:nth-child(4) { color: #34A853; } /* Green */
+.brand-pulse span:nth-child(5) { color: #4285F4; } /* Blue */
+.brand-pulse span:nth-child(6) { color: #EA4335; } /* Red */
+.brand-pulse span:nth-child(7) { color: #34A853; } /* Green */
