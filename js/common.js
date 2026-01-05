@@ -45,6 +45,21 @@ function initStats() {
     }
 }
 
+window.addEventListener('load', function () {
+    var loader = document.getElementById('loader');
+    var container = document.querySelector('.container');
+
+    // Small delay to ensure ECharts have started rendering
+    setTimeout(function () {
+        if (loader) {
+            loader.classList.add('loading-hidden');
+        }
+        if (container) {
+            container.classList.add('loaded');
+        }
+    }, 800);
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     initNav();
     initStats();
