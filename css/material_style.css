@@ -16,8 +16,10 @@ body {
 .app-bar {
     background-color: #ffffff;
     color: #5f6368;
-    padding: 0 16px;
-    height: 56px;
+    padding: 0 32px;
+    /* Matched container padding */
+    height: 64px;
+    /* Slightly taller for better scale */
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3);
     display: flex;
     justify-content: space-between;
@@ -60,13 +62,16 @@ body {
 /* Container - Flexible height for responsiveness */
 .container {
     max-width: 1400px;
-    margin: 12px auto;
-    padding: 0 16px;
-    min-height: calc(100vh - 80px);
+    margin: 24px auto;
+    /* Increased vertical margin */
+    padding: 0 32px;
+    /* Increased side padding */
+    min-height: calc(100vh - 124px);
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding-bottom: 40px;
+    gap: 20px;
+    /* More space between rows */
+    padding-bottom: 60px;
     /* Room for footer */
 }
 
@@ -169,12 +174,15 @@ p.chart-description {
     }
 
     .container {
-        height: auto;
+        padding: 0 16px;
+        margin: 16px auto;
+        gap: 16px;
     }
 
     .grid-2,
     .grid-3 {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .stats-row {
